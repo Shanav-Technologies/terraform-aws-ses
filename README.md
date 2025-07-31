@@ -19,11 +19,11 @@ To use this module, you should have Terraform installed and configured for AWS. 
 # Examples
 ```hcl
 module "ses" {
-  source       = "git::https://github.com/shanav-tech/terraform-aws-ses.git?ref=v1.0.0"
+  source       = "git::https://github.com/Shanav-Technologies/terraform-aws-ses.git?ref=v1.0.0"
 
   name         = local.name
   environment  = local.environment
-  domain       = "shanav-tech.ca"
+  domain       = "Shanav-Technologies.ca"
   enable_email = true
   emails       = []
   zone_id      = "XXXXXXXX7289RP"
@@ -36,14 +36,14 @@ module "ses" {
 
 
 ## Examples
-For detailed examples on how to use this module, please refer to the [examples](https://github.com/shanav-tech/terraform-aws-ses/tree/master/_example) directory within this repository.
+For detailed examples on how to use this module, please refer to the [examples](https://github.com/Shanav-Technologies/terraform-aws-ses/tree/master/_example) directory within this repository.
 
 ## License
-This Terraform module is provided under the **MIT** License. Please see the [LICENSE](https://github.com/shanav-tech/terraform-aws-ses/blob/master/LICENSE) file for more details.
+This Terraform module is provided under the **MIT** License. Please see the [LICENSE](https://github.com/Shanav-Technologies/terraform-aws-ses/blob/master/LICENSE) file for more details.
 
 ## Author
 Your Name
-Replace **MIT** and **shanav-tech** with the appropriate license and your information. Feel free to expand this README with additional details or usage instructions as needed for your specific use case.
+Replace **MIT** and **Shanav-Technologies** with the appropriate license and your information. Feel free to expand this README with additional details or usage instructions as needed for your specific use case.
 
 
 <!-- BEGIN_TF_DOCS -->
@@ -52,43 +52,43 @@ Replace **MIT** and **shanav-tech** with the appropriate license and your inform
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.8.5 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 5.50.0 |
-| <a name="requirement_tls"></a> [tls](#requirement\_tls) | >= 4.0.4 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | 6.5.0 |
+| <a name="requirement_tls"></a> [tls](#requirement\_tls) | 4.1.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 5.50.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 6.5.0 |
 
 ## Modules
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_labels"></a> [labels](#module\_labels) | git::https://github.com/shanav-tech/terraform-aws-labels.git | v1.0.0 |
+| <a name="module_labels"></a> [labels](#module\_labels) | git::https://github.com/Shanav-Technologies/terraform-aws-labels.git | v1.0.0 |
 
 ## Resources
 
 | Name | Type |
 |------|------|
-| [aws_iam_access_key.default](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_access_key) | resource |
-| [aws_iam_user.default](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_user) | resource |
-| [aws_iam_user_policy.default](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_user_policy) | resource |
-| [aws_route53_record.dkim](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route53_record) | resource |
-| [aws_route53_record.mx_receive](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route53_record) | resource |
-| [aws_route53_record.mx_send_mail_from](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route53_record) | resource |
-| [aws_route53_record.spf_domain](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route53_record) | resource |
-| [aws_route53_record.spf_mail_from](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route53_record) | resource |
-| [aws_ses_domain_dkim.default](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ses_domain_dkim) | resource |
-| [aws_ses_domain_identity.default](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ses_domain_identity) | resource |
-| [aws_ses_domain_mail_from.default](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ses_domain_mail_from) | resource |
-| [aws_ses_email_identity.default](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ses_email_identity) | resource |
-| [aws_ses_identity_policy.default](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ses_identity_policy) | resource |
-| [aws_ses_receipt_filter.default](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ses_receipt_filter) | resource |
-| [aws_ses_template.default](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ses_template) | resource |
-| [aws_iam_policy_document.allow_iam_name_to_send_emails](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document) | data source |
-| [aws_iam_policy_document.document](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document) | data source |
-| [aws_region.current](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/region) | data source |
+| [aws_iam_access_key.default](https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/iam_access_key) | resource |
+| [aws_iam_user.default](https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/iam_user) | resource |
+| [aws_iam_user_policy.default](https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/iam_user_policy) | resource |
+| [aws_route53_record.dkim](https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/route53_record) | resource |
+| [aws_route53_record.mx_receive](https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/route53_record) | resource |
+| [aws_route53_record.mx_send_mail_from](https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/route53_record) | resource |
+| [aws_route53_record.spf_domain](https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/route53_record) | resource |
+| [aws_route53_record.spf_mail_from](https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/route53_record) | resource |
+| [aws_ses_domain_dkim.default](https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/ses_domain_dkim) | resource |
+| [aws_ses_domain_identity.default](https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/ses_domain_identity) | resource |
+| [aws_ses_domain_mail_from.default](https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/ses_domain_mail_from) | resource |
+| [aws_ses_email_identity.default](https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/ses_email_identity) | resource |
+| [aws_ses_identity_policy.default](https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/ses_identity_policy) | resource |
+| [aws_ses_receipt_filter.default](https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/ses_receipt_filter) | resource |
+| [aws_ses_template.default](https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/ses_template) | resource |
+| [aws_iam_policy_document.allow_iam_name_to_send_emails](https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/data-sources/iam_policy_document) | data source |
+| [aws_iam_policy_document.document](https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/data-sources/iam_policy_document) | data source |
+| [aws_region.current](https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/data-sources/region) | data source |
 
 ## Inputs
 
@@ -112,7 +112,7 @@ Replace **MIT** and **shanav-tech** with the appropriate license and your inform
 | <a name="input_iam_name"></a> [iam\_name](#input\_iam\_name) | IAM username. | `string` | `""` | no |
 | <a name="input_label_order"></a> [label\_order](#input\_label\_order) | Label order, e.g. `name`,`application`. | `list(any)` | <pre>[<br>  "name",<br>  "environment"<br>]</pre> | no |
 | <a name="input_mail_from_domain"></a> [mail\_from\_domain](#input\_mail\_from\_domain) | Subdomain (of the route53 zone) which is to be used as MAIL FROM address. | `string` | `""` | no |
-| <a name="input_managedby"></a> [managedby](#input\_managedby) | ManagedBy, eg 'shanav-tech' | `string` | `"shanav-tech"` | no |
+| <a name="input_managedby"></a> [managedby](#input\_managedby) | ManagedBy, eg 'Shanav-Technologies' | `string` | `"Shanav-Technologies"` | no |
 | <a name="input_mx_type"></a> [mx\_type](#input\_mx\_type) | MX type for Record Set. | `string` | `"MX"` | no |
 | <a name="input_name"></a> [name](#input\_name) | Name  (e.g. `app` or `cluster`). | `string` | `""` | no |
 | <a name="input_repository"></a> [repository](#input\_repository) | Terraform current module repo | `string` | `""` | no |
